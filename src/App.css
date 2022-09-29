@@ -1,0 +1,6 @@
+* {
+  font-family: "Rubik", sans-serif;
+}
+.block1 {
+  display: flex;
+}
