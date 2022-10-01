@@ -8,34 +8,31 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1, height: "40px" }}>
+    <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="fixed"
+        className="appbar"
         style={{
           backgroundColor: "white",
-          height: "40px",
+          height: "35px",
         }}>
         <Typography
           variant="h6"
           component="div"
+          id="header-text"
           sx={{
             flexGrow: 1,
-            color: "black",
-            display: "flex",
-            justifyContent: "center",
           }}>
           #Эркаядолжнажить #saveErkaim
           <div>
-            <FavoriteBorderIcon
-              style={{ color: "black", paddingTop: "10px" }}
-            />
+            <FavoriteBorderIcon className="fav" style={{ color: "black" }} />
             <a
               href="https://instagram.com/save_erkaim?igshid=YmMyMTA2M2Y="
               target="_blank">
-              <InstagramIcon style={{ color: "black", paddingTop: "10px" }} />
+              <InstagramIcon className="insta" style={{ color: "black" }} />
             </a>
-
-            <HelpOutlineIcon style={{ color: "black", paddingTop: "10px" }} />
+            {/* <a></a>
+            <HelpOutlineIcon style={{ color: "black" }} /> */}
           </div>
         </Typography>
       </AppBar>
