@@ -56,6 +56,22 @@ ul li {
 .requisits h2 {
   text-decoration: underline;
 }
+
+.events-block {
+  background-color: #d1cefa;
+  padding: 20px 15px;
+}
+.card {
+  color: white;
+}
+.card-content {
+  background-color: #574fa8;
+}
+.footer {
+  font-weight: 800;
+  text-align: center;
+  padding: 5px;
+}
 @media screen and (max-width: 1000px) {
   .block1 img {
     width: 200px !important;
@@ -116,6 +132,9 @@ ul li {
     width: 140px !important;
     height: 210px;
   }
+  .footer {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 650px) {
   #header-text {
@@ -147,10 +166,16 @@ ul li {
   .txt-diagnosis {
     font-size: 10px !important;
   }
+  .footer {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 550px) {
   .txt-diagnosis {
     font-size: 9px !important;
+  }
+  .footer {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -187,6 +212,10 @@ ul li {
     max-width: 400px;
     margin-bottom: 0px !important;
   }
+
+  .footer {
+    font-size: 9px;
+  }
 }
 @media screen and (max-width: 405px) {
   .box-w-requisits {
@@ -194,6 +223,9 @@ ul li {
   }
   .txt-diagnosis {
     font-size: 12px !important;
+  }
+  .footer {
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 380px) {
@@ -205,6 +237,9 @@ ul li {
   }
   .requisits h2 {
     font-size: 14px;
+  }
+  .footer {
+    font-size: 7px;
   }
 }
 @media screen and (max-width: 360px) {

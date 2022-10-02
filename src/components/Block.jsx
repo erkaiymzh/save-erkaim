@@ -1,26 +1,32 @@
 import { Box, Button, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import ImageSlider from "./ImageSlider";
 import "./SliderHome.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const slides = [
   {
-    url: "https://i.pinimg.com/564x/48/c4/24/48c424da052f362b4352f60e2e9e3cc6.jpg",
+    url: "https://i.pinimg.com/564x/0c/29/ce/0c29cee6c9d34a3c68d17dc74119bec5.jpg",
     title: "2",
   },
   {
-    url: "https://i.pinimg.com/564x/2f/9c/e1/2f9ce1f4a4a90ef5199d903a17476551.jpg",
+    url: "https://i.pinimg.com/564x/a6/e7/39/a6e739dbd32157d0dfc1043c13c4387b.jpg",
     title: "1",
   },
   {
-    url: "https://i.pinimg.com/564x/01/ac/21/01ac21e066a8a66713399243dc1ea811.jpg",
+    url: "https://i.pinimg.com/564x/2f/9c/e1/2f9ce1f4a4a90ef5199d903a17476551.jpg",
     title: "3",
+  },
+  {
+    url: "https://i.pinimg.com/564x/f7/ab/57/f7ab574fe232fc12c52c38ac5449f744.jpg",
+    title: "4",
   },
 ];
 const containerStyles = {
   width: "100%",
   height: "450px",
   margin: "0 auto",
-  transition: "1s",
+  transition: "0.7s",
 };
 const overlaySlide = {
   width: "50%",
@@ -34,6 +40,10 @@ const overlaySlide = {
 };
 
 const Block = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       {/* <SliderHome /> */}
@@ -72,7 +82,10 @@ const Block = () => {
             alignItems: "center",
             margin: "30px",
           }}>
-          <Typography className="txt-diagnosis">
+          <Typography
+            className="txt-diagnosis"
+            data-aos="zoom-in"
+            data-aos-duration="900">
             Диагноз: нейробластома С2 Т3 N1 M1A 4 Б стадии с лейкемизацией в
             костный мозг. Эркеайым требуется срочная пересадка костного мозга в
             клинике Турции 100 000$ и 8 химиотерапий на сумму 250 000$. В
